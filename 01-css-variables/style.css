@@ -6,7 +6,12 @@
   --layout: 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 760px) {
+/*overwrite variable for some cases*/
+nav {
+  --link-color: #ccc;
+}
+
+@media screen and (max-width: 760px) and (min-width: 320px) {
   :root {
     --layout: 1fr;
   }
@@ -84,7 +89,7 @@ footer {
 
 footer .blurbs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: var(--layout);
   max-width: 760px;
   margin: 0 auto;
   grid-gap: 40px;
