@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#451B53",
+    "titleBar.activeBackground": "#612574",
+    "titleBar.activeForeground": "#FDFBFE"
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.fontFamily": "Operator mono light"
+}

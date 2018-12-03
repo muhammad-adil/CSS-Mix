@@ -1,0 +1,80 @@
+
+
+
+variable = $primary-color: #333;
+
+Nesting
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
+Mixins
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.box { @include transform(rotate(30deg)); }
+
+
+Extend/Inherit
+
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  @extend %message-shared;
+   border-color: green;
+}
+
+
+Operators
+standard math operators like +, -, *, /, and %.
+
+-----------------------------------------------------------------------------------
+https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+
+$break-small: 320px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+//---------------------------------------------------------------------------------
+
+@media (min-width: #{$screen-sm-min}) {
+       @content;
+}
+
+
+@media screen and (max-width: $break-small) {}
+@media screen and (min-width: $break-large) { }
+
