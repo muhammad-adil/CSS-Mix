@@ -79,9 +79,11 @@ button:hover {
     grid-row-end: 6;
     grid-column-start: 4;
     grid-column-end: 5; */
-
+    /* 
     grid-row: 2 / 6;
-  grid-column: 4 / 5;
+    grid-column: 4 / 5; */
+
+    grid-area: 2 / 4 / 6 / 5;
 }
 
 .equal-sign:hover {
