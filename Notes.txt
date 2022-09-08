@@ -1,0 +1,4 @@
+
+normalize: for cross browser, all elements work same on all browser.
+
+reset: 	for all elements to behave same,  removes all kind of margin, padding that browser add automatically.
